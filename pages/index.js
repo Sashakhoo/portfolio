@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbysasha</h1>
+            <h1 className="font-burtons text-xl"></h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -40,9 +40,8 @@ export default function Home() {
                 />
               </li>
               <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="/public/resume.pdf" download ="Natasya Khoo Resume.pdf">
+                <a href="../public/resume.pdf" download ="Natasya Khoo Resume.pdf"
+                  className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8">
                   Resume
                 </a>
               </li>
@@ -71,7 +70,7 @@ export default function Home() {
         <section>
           <div>
           <hr></hr>
-            <h3 className="text-3xl flex justify-center py-1 dark:text-white ">SKILLS</h3>
+            <h3 className="text-3xl flex justify-center py-10 dark:text-white ">SKILLS</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -134,7 +133,81 @@ export default function Home() {
         <section className="py-10">
           <div>
           <hr></hr>
-            <h3 className="text-3xl py-1 dark:text-white ">PROJECTS</h3>
+            <h3 className="text-3xl flex justify-center py-10 dark:text-white ">PROJECTS</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              Since the beginning of my journey as a freelance designer and
+              developer, I've done remote work for
+              <span className="text-teal-500"> agencies </span>
+              consulted for <span className="text-teal-500">startups </span>
+              and collaborated with talanted people to create digital products
+              for both business and consumer use.
+            </p>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+              I offer from a wide range of services, including brand design,
+              programming and teaching.
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1 ">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web1}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web2}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web3}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web4}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web5}
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+                src={web6}
+              />
+            </div>
+          </div>
+        </section>
+        <section className="py-10">
+          <div>
+          <hr></hr>
+          <h3 className="text-3xl flex justify-center py-10 dark:text-white ">CERTIFICATE</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
