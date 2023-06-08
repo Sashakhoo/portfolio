@@ -1,9 +1,9 @@
 import Head from "next/head";
 import {
-  AiFillTwitterCircle,
   AiFillLinkedin,
-  AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
+import { FaWhatsapp } from 'react-icons/fa';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import deved from "../public/dev-ed-wave.png";
@@ -31,7 +31,7 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedby</h1>
+            <h1 className="font-burtons text-xl">developedbysasha</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -42,8 +42,7 @@ export default function Home() {
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
-                >
+                  href="/public/resume.pdf" download ="Natasya Khoo Resume.pdf">
                   Resume
                 </a>
               </li>
@@ -61,7 +60,8 @@ export default function Home() {
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/natasyakhoo/" target="_blank"><AiFillLinkedin /></a>
-              <a href="https://github.com/Sashakhoo" target="_blank"><AiFillLinkedin /></a>
+              <a href="https://github.com/Sashakhoo" target="_blank"><AiFillGithub /></a>
+              <a href="https://wa.link/mdmgqz" target="_blank"><FaWhatsapp /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
               <Image src={deved} layout="fill" objectFit="cover" />
@@ -70,7 +70,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Skills</h3>
+          <hr></hr>
+            <h3 className="text-3xl flex justify-center py-1 dark:text-white ">SKILLS</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
@@ -132,7 +133,8 @@ export default function Home() {
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+          <hr></hr>
+            <h3 className="text-3xl py-1 dark:text-white ">PROJECTS</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
