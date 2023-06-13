@@ -12,6 +12,8 @@ import design from "../public/design.png";
 import consulting from "../public/consulting.png";
 import Image from "next/image";
 import Skills from "../pages/skills";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import web1 from "../public/web1.png";
 import web2 from "../public/web2.png";
 import web3 from "../public/web3.png";

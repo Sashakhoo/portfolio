@@ -5,12 +5,10 @@ import SkillCard from "./SkillCard.js"
 
 import javascript from "../assets/skills/javascript.svg"
 import git from "../assets/skills/git.svg"
-import bash from "../assets/skills/bash.svg"
 import linux from "../assets/skills/linux.svg"
 import python from "../assets/skills/python.svg"
 import reactIcon from "../assets/skills/react.svg"
 import tailwind from "../assets/skills/tailwind.svg"
-import express from "../assets/skills/express.svg"
 
 
 export default function Skills() {
@@ -29,14 +27,12 @@ export default function Skills() {
 
             <div className="mt-4">
                 <Slider {...settings}>
-                <SkillCard name="linux" experience="1 years" img={linux} />
-                <SkillCard name="bash" experience="1 years" img={bash} />
-                <SkillCard name="python" experience="1 years" img={python} />
-                <SkillCard name="javascript" experience="1 years" img={javascript} />
-                <SkillCard name="react" experience="1 years" img={reactIcon} />
-                <SkillCard name="tailwind" experience="1 years" img={tailwind} />
-                <SkillCard name="git" experience="1 years" img={git} />
-                <SkillCard name="express" experience="1 years" img={express} />
+                <SkillCard name="linux"  img={linux} />
+                <SkillCard name="python"  img={python} />
+                <SkillCard name="javascript"  img={javascript} />
+                <SkillCard name="react"  img={reactIcon} />
+                <SkillCard name="tailwind"  img={tailwind} />
+                <SkillCard name="git" img={git} />
                 </Slider>
             </div>
             
