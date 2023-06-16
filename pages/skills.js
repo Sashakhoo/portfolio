@@ -3,12 +3,12 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SkillCard from "./SkillCard.js"
 
-import javascript from "../assets/skills/javascript.svg"
-import git from "../assets/skills/git.svg"
-import linux from "../assets/skills/linux.svg"
-import python from "../assets/skills/python.svg"
-import reactIcon from "../assets/skills/react.svg"
-import tailwind from "../assets/skills/tailwind.svg"
+import javascript from "../public/skills/javascript.svg"
+import git from "../public/skills/git.svg"
+import linux from "../public/skills/linux.svg"
+import python from "../public/skills/python.svg"
+import reactIcon from "../public/skills/react.svg"
+import tailwind from "../public/skills/tailwind.svg"
 
 
 export default function Skills() {
@@ -22,8 +22,7 @@ export default function Skills() {
 
     return (
         <div id="skills" className="mt-4 text-white">
-            <h1 className="text-2xl font-bold">Skills</h1>
-            <p className="font-light text-gray-400">SKILLS</p>
+            <h1 className="text-2xl font-bold">SKILLS</h1>
 
             <div className="mt-4">
                 <Slider {...settings}>
