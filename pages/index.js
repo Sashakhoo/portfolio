@@ -73,7 +73,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-cyan-400 font-medium dark:text-cyan-400 md:text-6xl">
               /natasyakhoo
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -129,15 +129,12 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 MACHINE LEARNING
               </h3>
-              <p className="py-2">
+              <p className="py-2 text-blue-700">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
