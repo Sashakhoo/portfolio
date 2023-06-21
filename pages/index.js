@@ -73,7 +73,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
+            <h2 className="text-5xl py-2 text-cyan-300 font-medium dark:text-cyan-300 md:text-6xl">
               /natasyakhoo
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -108,9 +108,9 @@ export default function Home() {
         </section>
         <hr></hr>
         <section>
-          <div>
-            <h3 className="text-2xl font-bold flex justify-center py-10 dark:text-white ">PROJECTS</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
+          <div >
+            <h3 className="text-2xl font-bold flex justify-center py-10 dark:text-white border-cyan-300">PROJECTS</h3>
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 ">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
