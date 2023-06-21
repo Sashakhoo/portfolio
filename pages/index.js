@@ -21,12 +21,16 @@ import web4 from "../public/project/web4.png";
 import web5 from "../public/project/web5.png";
 import web6 from "../public/project/web6.png";
 
-import javascript from "../public/skills/javascript.svg"
+import java from "../public/skills/java.svg"
 import git from "../public/skills/git.svg"
 import linux from "../public/skills/linux.svg"
 import python from "../public/skills/python.svg"
 import reactIcon from "../public/skills/react.svg"
 import tailwind from "../public/skills/tailwind.svg"
+import ml from "../public/skills/ml.svg"
+import html from "../public/skills/html.svg"
+import css from "../public/skills/css.svg"
+import javascript from "../public/skills/javascript.svg"
 
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -73,7 +77,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center p-10 py-10">
-            <h2 className="text-5xl py-2 text-cyan-300 font-medium dark:text-cyan-300 md:text-6xl">
+            <h2 className="text-5xl py-2 text-cyan-400 font-medium dark:text-cyan-400 md:text-6xl">
               /natasyakhoo
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
@@ -99,10 +103,14 @@ export default function Home() {
                 <Slider {...settings}>
                 <SkillCard name="linux"  img={linux} />
                 <SkillCard name="python"  img={python} />
-                <SkillCard name="javascript"  img={javascript} />
+                <SkillCard name="java"  img={java} />
                 <SkillCard name="react"  img={reactIcon} />
                 <SkillCard name="tailwind"  img={tailwind} />
+                <SkillCard name="machine learning"  img={ml} />
                 <SkillCard name="git" img={git} />
+                <SkillCard name="html" img={html} />
+                <SkillCard name="css" img={css} />
+                <SkillCard name="javascript"  img={javascript} />
                 </Slider>
             </div>
         </section>
@@ -129,15 +137,12 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 MACHINE LEARNING
               </h3>
-              <p className="py-2">
+              <p className="py-2 text-blue-700">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
               <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
