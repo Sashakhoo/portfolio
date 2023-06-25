@@ -10,11 +10,10 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import deved from "../public/main/dev-ed-wave.png";
-import code from "../public/main/code.png";
-import design from "../public/main/design.png";
-import consulting from "../public/main/consulting.png";
+import music from "../public/project/music.svg";
+import hosp from "../public/project/hosp.svg";
+import stats from "../public/project/stats.svg";
 import Image from "next/image";
-import Link from 'next/link';
 
 import mern from "../public/cert/mern.png";
 import stemaspire from "../public/cert/stemaspire.png";
@@ -22,6 +21,7 @@ import web3 from "../public/project/web3.png";
 import web4 from "../public/project/web4.png";
 import web5 from "../public/project/web5.png";
 import web6 from "../public/project/web6.png";
+
 
 import java from "../public/skills/java.svg"
 import git from "../public/skills/git.svg"
@@ -120,59 +120,32 @@ export default function Home() {
         <section>
           <div >
             <h3 className="text-2xl font-bold flex justify-center py-10 dark:text-white border-cyan-300">PROJECTS</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200 ">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
-            </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image src={music} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
                 Lyrics Based Emotion Classification
               </h3>
-              <p className="py-2 text-blue-700">
-                Creating elegant designs suited for your needs following core
-                design theory.
+              <p className="py-2">
+              A project of classifying human emotion using Malay patriotic song as dataset and NRC Emotion Lexicon as a guideline for final output. Four Machine Learning model was used in training the data for a better classifying task. The final output consists of 8 classified emotion as it can turn into a dashboard application that can help musicians and lyricist come up with better idea on writing lyrics that can help motivate the people to invoke feelings of patriotism in them.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image src={hosp} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Symptoms Based Disease Classification
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+              A collaboration of computer science and healthcare students that work together to accomplish a user friendly pre–diagnosis NCDs website. The whole project is completed within a month time from training to deploy the Machine Learning model to websites.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
+              <Image src={stats} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">Hotel Cancellation Booking data-viz </h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+              Aims to provide a visual representation of hotel booking data related to cancellations. By analyzing and presenting the data in a visually appealing manner, this project allows users to gain insights into patterns, trends, and factors influencing hotel booking cancellations. It helps stakeholders in the hospitality industry and related fields to make informed decisions and implement strategies to optimize booking management and reduce cancellations.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
             </div>
           </div>
         </section>
