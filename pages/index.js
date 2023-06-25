@@ -14,9 +14,10 @@ import code from "../public/main/code.png";
 import design from "../public/main/design.png";
 import consulting from "../public/main/consulting.png";
 import Image from "next/image";
+import Link from 'next/link';
 
 import mern from "../public/cert/mern.png";
-import web2 from "../public/project/web2.png";
+import stemaspire from "../public/cert/stemaspire.png";
 import web3 from "../public/project/web3.png";
 import web4 from "../public/project/web4.png";
 import web5 from "../public/project/web5.png";
@@ -72,7 +73,7 @@ export default function Home() {
                 />
               </li>
               <li>
-              <a href="/portfolio/public/resume.pdf" download="Natasya Khoo Resume.pdf" 
+              <a href="/api/download" download="Natasya Khoo Resume.pdf" 
               className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"> Resume</a>
               </li>
             </ul>
@@ -136,7 +137,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
               <Image src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                MACHINE LEARNING
+                Lyrics Based Emotion Classification
               </h3>
               <p className="py-2 text-blue-700">
                 Creating elegant designs suited for your needs following core
@@ -148,7 +149,7 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                WEB DEVELOPMENT
+                Symptoms Based Disease Classification
               </h3>
               <p className="py-2">
                 Do you have an idea for your next great website? Let's make it a
@@ -162,7 +163,7 @@ export default function Home() {
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
               <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">DATA ANALYTIC</h3>
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Hotel Cancellation Booking data-viz </h3>
               <p className="py-2">
                 Are you interested in feedback for your current project? I can
                 give you tips and tricks to level it up.
@@ -193,10 +194,10 @@ export default function Home() {
             <div className="basis-1/3 flex-1">
               <Image
                 className="rounded-lg object-cover"
-                width={"100%"}
+                width={"130%"}
                 height={"100%"}
                 layout="responsive"
-                src={web2}
+                src={stemaspire}
               />
             </div>
             <div className="basis-1/3 flex-1">
