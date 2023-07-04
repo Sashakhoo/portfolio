@@ -83,7 +83,7 @@ export default function Home() {
               /natasyakhoo
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Software Engineer | Freelance Data Analyst
+              Junior Software Engineer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
             Relentless dream chaser fueled by ambition and caffeine
@@ -142,7 +142,7 @@ export default function Home() {
               Symptom Based Disease Classification
               </h3>
               <div className="flex justify-center">
-              <a href="https://github.com/Sashakhoo/Lyrics-based-Emotion-Classification" target="_blank" className="inline-flex items-center">
+              <a href="https://github.com/Sashakhoo/Symptoms-based-Disease-Classification" target="_blank" className="inline-flex items-center">
               <AiFillGithub size ={30}/>
               </a>
             </div>
@@ -155,7 +155,7 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2 ">
                 Hotel Cancellation Booking data-viz</h3>
                 <div className="flex justify-center">
-              <a href="https://github.com/Sashakhoo/Lyrics-based-Emotion-Classification" target="_blank" className="inline-flex items-center">
+              <a href="https://github.com/Sashakhoo/Hotel-Cancellation-Booking-Data-Visualization" target="_blank" className="inline-flex items-center">
               <AiFillGithub size ={30}/>
               </a>
             </div>
