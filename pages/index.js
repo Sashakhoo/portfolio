@@ -3,25 +3,21 @@ import {
   AiFillLinkedin,
   AiFillGithub,
 } from "react-icons/ai";
+import Experience from "./Experience";
+import dynamic from "next/dynamic";
 import { FaWhatsapp } from 'react-icons/fa';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { BrowserRouter } from "react-router-dom";
+
 import deved from "../public/main/dev-ed-wave.png";
 import music from "../public/project/music.svg";
 import hosp from "../public/project/hosp.svg";
 import stats from "../public/project/stats.svg";
 import Image from "next/image";
-
-import mern from "../public/cert/mern.png";
-import stemaspire from "../public/cert/stemaspire.png";
-import web3 from "../public/project/web3.png";
-import web4 from "../public/project/web4.png";
-import web5 from "../public/project/web5.png";
-import web6 from "../public/project/web6.png";
-
 
 import java from "../public/skills/java.svg"
 import git from "../public/skills/git.svg"
@@ -50,11 +46,63 @@ export default function Home() {
     slidesToScroll: 1,
    };
 
+   const experiences = [
+    {
+      title: "React.js Developer",
+      company_name: "Starbucks",
+      iconBg: "#383E56",
+      date: "March 2020 - April 2021",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "React Native Developer",
+      company_name: "Tesla",
+      iconBg: "#E6DEDD",
+      date: "Jan 2021 - Feb 2022",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Web Developer",
+      company_name: "Shopify",
+      iconBg: "#383E56",
+      date: "Jan 2022 - Jan 2023",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+    {
+      title: "Full stack Developer",
+      company_name: "Meta",
+      iconBg: "#E6DEDD",
+      date: "Jan 2023 - Present",
+      points: [
+        "Developing and maintaining web applications using React.js and other related technologies.",
+        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
+  ];
+
   useEffect(() => {
     AOS.init();
   }, [])
 
   return (
+    <BrowserRouter>
     <div className={darkMode ? "dark" : ""}>
       <Head>
         <title>Natasya Khoo Portfolio</title>
@@ -165,69 +213,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-10">
-          <div>
-          <hr></hr>
-            <h3 className="text-2xl font-bold flex justify-center py-10 dark:text-white ">CERTIFICATES</h3>
-          </div>
-          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className="basis-1/3 flex-1 ">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={mern}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"140%"}
-                height={"100%"}
-                layout="responsive"
-                src={stemaspire}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web3}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
-              />
-            </div>
-          </div>
+        <section>
+        
+          <Experience/>
         </section>
       </main>
     </div>
+    </BrowserRouter>
   );
 }
