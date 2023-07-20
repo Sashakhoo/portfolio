@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import deved from "../public/main/dev-ed-wave.png";
+import pp from "../public/main/pp.jpeg";
 import music from "../public/project/music.svg";
 import hosp from "../public/project/hosp.svg";
 import stats from "../public/project/stats.svg";
@@ -31,7 +31,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import SkillCard from "./SkillCard.js"
 
-import cert1 from "../public/cert/cert1.png";
 import cert2 from "../public/cert/cert2.png";
 import cert3 from "../public/cert/cert3.png";
 import cert4 from "../public/cert/cert4.png";
@@ -99,7 +98,7 @@ export default function Home() {
               <a href="https://wa.link/mdmgqz" target="_blank"><FaWhatsapp /></a>
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image src={pp} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
